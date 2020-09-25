@@ -68,9 +68,61 @@ h2 {
     color: #FFF;
 }
 
+                                /* gallery */
+
+.row {
+    margin: 3rem;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 943px){
+    .row {
+        display: none;
+    }
+}
+
+.row img {
+    background-color: #fff;
+    padding: 8px;
+    display: block;
+
+}
+
+
+.art_gallery{
+    transform: rotate(-15deg);
+}
+.book_store{
+    transform: rotate(-25deg);
+}
+.city_hall{
+    transform: rotate(15deg);
+}
+.movie_theater{ 
+    transform: rotate(-5deg);
+}
+.museum{ 
+    transform: rotate(10deg);
+}
+.stadium{
+    transform: rotate(-10deg);
+}
+.library{
+    transform: rotate(20deg);
+}
+
+
 
                                 /* index.html text */
 
+
+h3 {
+    text-transform: uppercase;
+    padding-top: 5%;
+    letter-spacing: 4px;
+    text-align: center;
+}
 
 @media only screen and (max-width: 375px) {
   h3 {
@@ -78,18 +130,10 @@ h2 {
   }
 }
 
-h3 {
-    text-transform: uppercase;
-    padding-top: 10%;
-    letter-spacing: 4px;
+.text {
     text-align: center;
+    margin: 5%;
 }
-
-p {
-    text-align: center;
-    margin: 25px 75px 15px;
-}
-
 
 
                                 /* footer*/
