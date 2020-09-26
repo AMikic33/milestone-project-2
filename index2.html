@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Art finder</title>
+    </head>
+
+    <body>
+        <div class="navbar-fixed">
+            <nav class="grey">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Art finder</a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#search">Search</a>
+                            </li>
+                            <li>
+                                <a href="#about">About us</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-nav">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#search">Search</a>
+                            </li>
+                            <li>
+                                <a href="#about">About us</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+
+
+
+<section id="search" class="section section-search grey darken-1 center">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h3>Search destinations</h3>
+                    <div class="input-field">
+                        <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Dublin, New York, etc...">
+                    </div>
+            </div>   
+        </div>
+    </div>
+</section>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+          <script>
+
+          /* SideNav */ 
+
+            var sideNav = document.querySelector('.sidenav');
+            M.Sidenav.init(sideNav, {});
+
+            /* Autocomplete */
+
+            var ac = document.querySelector('.autocomplete');
+            M.Autocomplete.init(ac, {
+                data: {
+                    "Dublin": null,
+                    "New York": null,
+                    "Paris": null,
+                    "Europe": null,
+                    
+                }
+            });
+          </script>
+
+    </body>
+  </html>
