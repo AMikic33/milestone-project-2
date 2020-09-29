@@ -1,41 +1,95 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Art finder Website
 
-Welcome AMikic33,
+This project is to create a website that finds art around us no matter where we are. The user can select any city on earth and choose his or hers interests, such as librares, museums, book store and more. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+Once the city and the option of interest has been selected, the user can see all results on the map. 
+Essetially, the website can be used when a user is planning a trip or on the go. 
 
-## Gitpod Reminders
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This project was designed for all art lovers who want to discover and/or visit art places whereever they go. 
 
-`python3 -m http.server`
+The website contains scrollspy which makes it very easy to use. To find the needed info, all the user has to do is insert the city they'll visit, and choose one of the interests. 
 
-A blue button should appear to click: *Make Public*,
+The interests are being displayed in buttons, which increase in size when hovered over and the text changes colour, to make it even easier for the user to choose the correct interest. This is especially handy on mobile version.
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories
 
-A blue button should appear to click: *Make Public*,
+##### New Customers
 
-Another blue button should appear to click: *Open Browser*.
+- as a new customer, I would like to search for museums and art galleries when in a foreign city, so that I can have a better perception of the local culture.
+- as a new customer, I would like to search for book stores, especially the small, localy owned stores, because there are always interesting books to find. 
+- as a new customer, I would like to explore the architecture when in a foreign city, such as city halls, museums and stadiums.
+- as a new customer, I would like to search for all tourist attractions, so that I am able to make a plan for my trip.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
-## Updates Since The Instructional Video
+##### Returning customers
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+- as a returning customer, I would like to check on the map which places of interest will be in the vicinity of my hotel. 
+- as a returning customer, I would like to double check the addresses of the places I'm planning to visit, so I can make my trip schedule. 
+- as a returning customer, I would like to find the addresses of the places I have visited few years ago.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Wireframes
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-- The wireframes are included in a separate folder. Please use the following link to access the entire wireframe collection:
+https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
 
-Happy coding!
+## Features
+
+#### Existing Features
+
+- scrollspy for an easy and qiuck scroll to the wishing area
+- gallery of photos at the start, offering an inspiration
+- how to use the map explained in 3 easy steps
+- autocomplete when searching the destination, for a quick find and avoiding misspelling
+- all art related sites offered in buttons, for an easy and quick choice
+- interests button increase in size and change the text colous, to avoid searching for unwanted interest. 
+- Google Map Window - allows user to view more info about chosen interest
+
+
+#### Features Left to Implemented
+
+- become a member - allows user to see they previous searches and to save favorites
+- email option with all searched info included
+- show more results - allows user to read up about the place they're about to visit
+- images/videos of results - allows user to see the places of choice
+
+
+
+## Technologies Used
+
+
+-HTML - has been used to give instructions to the browser on how to arrange the layout and interprit the code correctly.
+-CSS - has been used to style and theme the website.
+- Bootstrap - has been used to help design the framework.
+- Balsamiq - has been used in the design phase to create wireframes.
+- Font Awesome - has been used to insert a font family and icons.
+- Materialize - has been used to help design the framework
+- Javascript - was used to program map feature and some others on the site.
+
+
+
+## Testing
+
+## Deployment
+
+## Credits
+
+## Acknowledgements
+
+- I would like to acknowledge my mentor Reuben Ferrante, for all the help and support on this project.
+- I would like to thank the tutors, especially Tim, for all of their help and support.
+- I would also like to thank my friends and family for all of their support.
+
+
+
+
+
+
+
+
