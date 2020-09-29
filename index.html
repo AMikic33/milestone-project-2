@@ -22,9 +22,9 @@
          />
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-                            <!-- title-->
       <title>Art Finder</title>
+
+                                    <!-- link to css -->
       <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
       <link rel="shortcut icon" href="assets/images/favicon.ico" />
    </head>
@@ -35,15 +35,10 @@
                                     <!-- Header -->
 
         <header class="container-fluid header-style">
-        <div class="col-md-12">
-            <a href="index.html"> <img src="assets/images/favicon.ico" class="logo" width="100"></a>
+            <div class="col-md-12">
+                <a href="index.html"> <img src="assets/images/favicon.ico" class="logo" width="100"></a>
                 <h2>Discover the art around you.</h2>
-                    <ul class="navigation">
-                        <li><a href="about_us.html">About us</a></li>
-                        <li><a href="plan_your_trip.html">Plan your trip</a></li>
-                        <li><a class="active" href="index.html">Home</a></li>
-                    </ul>
-        </div>
+            </div>
       </header>
 
 <section class="container-fluid section-style">
@@ -52,22 +47,21 @@
 
         <div>
             <h3>Find your interests where ever you go!</h3>
-                <div class="row">
-
-                        <div class="art_gallery"><img src="assets/images/art_gallery.jpg"></div>
-                        <div class="book_store"><img src="assets/images/book_store.jpg"></div>
-                        <div class="city_hall"><img src="assets/images/city_hall.jpg"></div>
-                        <div class="movie_theater"><img src="assets/images/movie_theater.jpg"></div>
-                        <div class="museum"><img src="assets/images/museum.jpg"></div>
-                        <div class="stadium"><img src="assets/images/stadium.jpg"></div>
-                        <div class="library"><img src="assets/images/library.jpg"></div>
+                
+                    <div class="gallery">
+                        <img src="assets/images/art_gallery.jpg" class="responsive">
+                        <img src="assets/images/book_store.jpg" class="responsive">
+                        <img src="assets/images/city_hall.jpg" class="responsive">
+                        <img src="assets/images/movie_theater.jpg" class="responsive">
+                        <img src="assets/images/museum.jpg" class="responsive">
+                        <img src="assets/images/library.jpg" class="responsive">
                     </div>
-                </div>
+        </div>
 
 
                                                 <!-- Intro text -->
 
-                <div class="text">
+                <div class="container-fluid text-center">
 
                     <p>
                         In a world where indulging our passions has become second nature, travel has become 
@@ -114,40 +108,35 @@
 
                                 <!-- Hero image and form -->
 
-<section class="hero-form">
-    <div class="cover">
-        <img src="assets/images/thinker.jpg" class="img-fluid w-100">
+
+
+
+<div class="container-fluid form">
+    <div class="row">
+        <h5>Choose your destination</h5>
+                <!-- search input -->
+        <input id="searchInput" class="controls" type="text" placeholder="enter a location">
     </div>
-     
-            <div class="col-md-12 wrap">
-                
-                <form>
-                    <div class="form-group">
-                        <label for="findCity"><h5>Find your destination</h5></label>
-                        <input type="text" class="form-control" id="findCity" placeholder="enter your destination" required>
-                    </div>
+    <div class="row">
+        <div class="interest">
+                            <label for="findInterest"><h5>Choose your interest</h5></label><br>
+                                    <button id="library">Library</button>
+                                    <button id="artGallery">Art gallery</button>
+                                    <button id="museum">Museum</button>
+                                    <button id="bookStore">Book store</button>
+                                    <button id="movieTheater">Movie theater</button>
+                                    <button id="stadium">Stadium</button>
+                                    <button id="attraction">Tourist attraction</button>
+        </div>
+    </div>
 
-                    <div class="interest">
-                        <label for="findInterest"><h5>Choose your interest</h5></label><br>
-                            <div class="button-group">
-                                <button id="library">Library</button>
-                                <button id="artGallery">Art gallery</button>
-                                <button id="museum">Museum</button>
-                                <button id="bookStore">Book store</button>
-                            </div>
-                            <div class="button-group">
-                                <button id="movieTheater">Movie theater</button>
-                                <button id="stadium">Stadium</button>
-                                <button id="attraction">Tourist attraction</button>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Search</button>
-                    </form>
-            </div>   
-</section>
+            <button type="submit" class="btn btn-primary">Search</button>
+</div>  
 
     <div id="map"></div>
+
+    <!--display geo location data -->
+
 
 
                                 <!-- Footer -->

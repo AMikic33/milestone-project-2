@@ -7,6 +7,7 @@
 
                             /* header */
 .header-style {
+    text-align: center;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -22,50 +23,8 @@
 }
 
 h2 {
-    float: left;
-    padding-top: 1.5%;
-    padding-left: 1%;
-}
-
-
-.navigation {
-    list-style-type: none;
-    font-size: 110%;
-    padding-top: 2%;
-}
-
-.navigation li {
-    float: right;
-    margin-right: 30px;
-}
-
-.navigation a{
-    text-decoration: none;
-    color: #000;
-}
-.navigation a:hover{
-    border-bottom: 1px solid;
-}
-
-.active {
-    border-bottom: 1px solid;
-}
-
-
-@media screen and (max-width: 943px){
-    .navigation a {
-        clear: right;
-        float: right;
-        margin-right:30px;
-        padding-bottom: 20px;
-        line-height: 20px;
-    }
-
-    h2 {
-        display: none;
-    }
-
-        }       
+    padding: 2%;
+}    
 
 
                                 /* section style */
@@ -78,52 +37,45 @@ h2 {
 
                                 /* gallery */
 
-.row {
+.gallery {
     margin: 3rem;
     margin-top: 5rem;
-    align-items: center;
+    text-align: center; 
 }
 
-@media screen and (max-width: 943px){
-    .row {
-        display: none;
-    }
-}
-
-.row img {
-    background-color: #fff;
-    padding: 8px;
-    display: block;
+.gallery img {
+    border-style: solid;
     box-shadow: 0 25px 22px 0 rgba(0,0,0,0.20);
 
 }
 
-
-.art_gallery{
+img[src*="art_gallery.jpg"] {
     transform: rotate(-15deg);
 }
-.book_store{
+
+img[src*="book_store.jpg"] {
     transform: rotate(-25deg);
 }
-.city_hall{
+img[src*="city_hall.jpg"] {
     transform: rotate(15deg);
 }
-.movie_theater{ 
+img[src*="movie_theater.jpg"] { 
     transform: rotate(-5deg);
 }
-.museum{ 
+img[src*="museum.jpg"] { 
     transform: rotate(10deg);
 }
-.stadium{
+img[src*="library.jpg"] {
     transform: rotate(-10deg);
 }
-.library{
-    transform: rotate(20deg);
+
+.responsive {
+  width: 15%;
+  height: auto;
 }
 
 
-
-                                /* index.html text */
+                                /* title and text */
 
 
 h3 {
@@ -139,13 +91,12 @@ h3 {
   }
 }
 
-.text {
-    text-align: center;
-    margin: 5%;
+.text-center { 
+    padding: 3%;
 }
 
 
-                                
+                                /* cards showing steps */
 
 .card {
     margin-right: 0;
@@ -167,73 +118,33 @@ h3 {
     margin-top: 4%;
 }
 
-                /* plan your trip section */
+                         /* plan your trip section */
 
-                
 
-.hero-form {
-
+.form {
     position: relative;
-}
-
-.cover {
-    margin: 0;
-    padding:0;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-
-
-}
-
-@media screen and (max-width: 943px) {
-.cover {
-    display: none;
-}
-}
-
-
-.wrap {
-    position: absolute;
-    display: inline-block;
-    width: 500px;
+    text-align: center;
     height: 450px;
     top: 15%;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 1%;
+    padding: 5%;
     background: rgba(0,0,0,0.20);
-    padding: 15px;
 
-}
-
-.try {
-    background-image: url(https://storage.needpix.com/rsynced_images/statue-of-unity-3971077_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    overflow: hidden;
-    height: 500px;
-}
-    
+}   
 
 
 h5 {
     font-size: 25px;
     color: #fff;
-    padding-top: 2%;
+    padding: 2%;
     
 }
 
-#findCity {
-    border-bottom: 1px solid #add8e6;
+.interest {
     color: #fff;
-}
-
-.button-group {
     text-align: center;
 }
+
 button {
     display:inline-block;
     padding: 10px;
@@ -245,6 +156,7 @@ button {
     left:-60px;
     margin-top:25px;
     margin-right: 5px;
+    
 }
 
 button:hover {
@@ -269,11 +181,6 @@ button:hover {
     height: 400px;
     margin: 0;
     padding: 0;
-}
-
-
-#cityForm {
-    width: 40%;
 }
 
 input[type="text"] {
