@@ -49,12 +49,12 @@
             <h3>Find your interests where ever you go!</h3>
                 
                     <div class="gallery">
-                        <img src="assets/images/art_gallery.jpg" class="responsive">
-                        <img src="assets/images/book_store.jpg" class="responsive">
-                        <img src="assets/images/city_hall.jpg" class="responsive">
-                        <img src="assets/images/movie_theater.jpg" class="responsive">
-                        <img src="assets/images/museum.jpg" class="responsive">
-                        <img src="assets/images/library.jpg" class="responsive">
+                        <img src="assets/images/photo1.jpg" class="responsive">
+                        <img src="assets/images/photo2.jpg" class="responsive">
+                        <img src="assets/images/photo3.jpg" class="responsive">
+                        <img src="assets/images/photo4.jpg" class="responsive">
+                        <img src="assets/images/photo5.jpg" class="responsive">
+                        <img src="assets/images/photo6.jpg" class="responsive">
                     </div>
         </div>
 
@@ -109,34 +109,57 @@
                                 <!-- Hero image and form -->
 
 
+<div class="container-fluid">
 
-
-<div class="container-fluid form">
+<div class="col-sm-12 col-md-6 form">
     <div class="row">
         <h5>Choose your destination</h5>
-                <!-- search input -->
         <input id="searchInput" class="controls" type="text" placeholder="enter a location">
     </div>
-    <div class="row">
-        <div class="interest">
-                            <label for="findInterest"><h5>Choose your interest</h5></label><br>
-                                    <button id="library">Library</button>
-                                    <button id="artGallery">Art gallery</button>
-                                    <button id="museum">Museum</button>
-                                    <button id="bookStore">Book store</button>
-                                    <button id="movieTheater">Movie theater</button>
-                                    <button id="stadium">Stadium</button>
-                                    <button id="attraction">Tourist attraction</button>
+    <form name="interest">
+        <h5>Choose your interest</h5>
+        <button id="library">Library</button>
+        <button id="art_gallery">Art Gallery</button>
+        <button id="book_store">Book store</button>
+        <button id="movie_theater">Movie theater</button>
+        <button id="museum">Museum</button>
+        <button id="city_hall">City hall</button>
+        <button id="stadium">Stadium</button>
+        <button id="attraction">Tourist Attraction</button>
+    </form>
+</div>
+
+
+<div class="row">
+
+            <!-- this area shows the currently selected options as well as the search and clear buttons -->
+            <div class="col-md-12 current_choice">
+                <h2>Current Selection</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>City:</h3>
+                        <h4 id="textLocation">None</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Interest:</h3>
+                        <h4 id="textInterest">None</h4>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="showMap">Show on Map</button>
+                    <button id="clearResults">Reset Search</button>
+                </div>
+            </div>
+
         </div>
-    </div>
 
-            <button type="submit" class="btn btn-primary">Search</button>
-</div>  
+  
 
-    <div id="map"></div>
+</div>
 
-    <!--display geo location data -->
 
+  <div id="map"></div>
 
 
                                 <!-- Footer -->
