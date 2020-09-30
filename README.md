@@ -1,17 +1,19 @@
 # Art finder Website
 
-This project is to create a website that finds art around us no matter where we are. The user can select any city on earth and choose his or hers interests, such as librares, museums, book store and more. 
+This project is to create a website that finds art around us no matter where we are. The user can select any city on Earth and choose their interests, such as librares, museums, book stores and more. 
 
-Once the city and the option of interest has been selected, the user can see all results on the map. 
-Essetially, the website can be used when a user is planning a trip or on the go. 
+Once the city and the option of interest have been selected, the user can see the results on the map. 
+Essentially, the website can be used when a user is planning a trip or on the go. 
 
 ## UX
 
-This project was designed for all art lovers who want to discover and/or visit art places whereever they go. 
+This project was designed for all art lovers who want to discover and/or visit art places where ever they go. 
 
-The website contains scrollspy which makes it very easy to use. To find the needed info, all the user has to do is insert the city they'll visit, and choose one of the interests. 
+The interests are being displayed in buttons, which increase in size when hovered over and the text changes colour, to make it even easier for the user to choose the correct interest. This is especially handy on the mobile version.
 
-The interests are being displayed in buttons, which increase in size when hovered over and the text changes colour, to make it even easier for the user to choose the correct interest. This is especially handy on mobile version.
+The buttons also change the color when clicked, making the choice of the interest even more obvious. 
+
+Furthermore, there is a "current selection" part, to show to the user their current selection. This is resetted with every new search.
 
 
 ### User Stories
@@ -43,12 +45,12 @@ https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
 
 #### Existing Features
 
-- scrollspy for an easy and qiuck scroll to the wishing area
 - gallery of photos at the start, offering an inspiration
 - how to use the map explained in 3 easy steps
 - autocomplete when searching the destination, for a quick find and avoiding misspelling
 - all art related sites offered in buttons, for an easy and quick choice
-- interests button increase in size and change the text colous, to avoid searching for unwanted interest. 
+- interests buttons increase in size and change the text colour, to avoid searching for an unwanted interest. 
+- current selection window, for a correct search
 - Google Map Window - allows user to view more info about chosen interest
 
 
@@ -79,6 +81,21 @@ https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
 ## Deployment
 
 ## Credits
+
+#### Content
+
+-Logo image: created on favicon.ico / https://pngimage.net/wp-content/uploads/2018/05/buho-silueta-png-7.png
+-photo1: https://upload.wikimedia.org/wikipedia/en/6/66/Graves_Art_Gallery%2C_Sheffield.jpg
+-photo2: https://live.staticflickr.com/37/110845690_5f0a727f46_b.jpg
+-photo3: https://live.staticflickr.com/65535/37843070504_8352d7ecd0_b.jpg
+-photo4: https://cdn.pixabay.com/photo/2019/12/20/11/06/movie-4708211__340.jpg
+-photo5: https://i.pinimg.com/originals/46/38/72/4638722a2adccde668f783be4e96e986.jpg
+-photo6: personal belonging
+
+-text: https://www.harpersbazaar.com/culture/travel-dining/g19834665/best-art-cities/
+
+-Font Icons from Font Awesome
+
 
 ## Acknowledgements
 
