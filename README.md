@@ -1,6 +1,6 @@
 # Art finder Website
 
-This project is to create a website that finds art around us no matter where we are. The user can select any city on Earth and choose their interests, such as librares, museums, book stores and more. 
+This project is to create a website that finds art around us no matter where we are. The user can select any city on Earth and choose their interests, such as libraries, museums, book stores and more. 
 
 Once the city and the option of interest have been selected, the user can see the results on the map. 
 Essentially, the website can be used when a user is planning a trip or on the go. 
@@ -21,7 +21,7 @@ Furthermore, there is a "current selection" part, to show to the user their curr
 ##### New Customers
 
 - as a new customer, I would like to search for museums and art galleries when in a foreign city, so that I can have a better perception of the local culture.
-- as a new customer, I would like to search for book stores, especially the small, localy owned stores, because there are always interesting books to find. 
+- as a new customer, I would like to search for book stores, especially the small, locally owned stores, because there are always interesting books to find. 
 - as a new customer, I would like to explore the architecture when in a foreign city, such as city halls, museums and stadiums.
 - as a new customer, I would like to search for all tourist attractions, so that I am able to make a plan for my trip.
 
@@ -66,13 +66,13 @@ https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
 ## Technologies Used
 
 
--HTML - has been used to give instructions to the browser on how to arrange the layout and interprit the code correctly.
+-HTML - has been used to give instructions to the browser on how to arrange the layout and interpret the code correctly.
 -CSS - has been used to style and theme the website.
 - Bootstrap - has been used to help design the framework.
 - Balsamiq - has been used in the design phase to create wireframes.
 - Font Awesome - has been used to insert a font family and icons.
 - Materialize - has been used to help design the framework
-- Javascript - was used to program map feature and some others on the site.
+- JavaScript - was used to program map feature and some others on the site.
 
 
 
