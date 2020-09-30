@@ -36,7 +36,7 @@ Furthermore, there is a "current selection" part, to show to the user their curr
 
 ## Wireframes
 
--- The wireframes are included in a separate folder. Please use the following link to access the entire wireframe collection:
+- The wireframes are included in a separate folder. Please use the following link to access the entire wireframe collection:
 https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
 
 
@@ -85,12 +85,19 @@ https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
 #### Content
 
 -Logo image: created on favicon.ico / https://pngimage.net/wp-content/uploads/2018/05/buho-silueta-png-7.png
+
 -photo1: https://upload.wikimedia.org/wikipedia/en/6/66/Graves_Art_Gallery%2C_Sheffield.jpg
+
 -photo2: https://live.staticflickr.com/37/110845690_5f0a727f46_b.jpg
+
 -photo3: https://live.staticflickr.com/65535/37843070504_8352d7ecd0_b.jpg
+
 -photo4: https://cdn.pixabay.com/photo/2019/12/20/11/06/movie-4708211__340.jpg
+
 -photo5: https://i.pinimg.com/originals/46/38/72/4638722a2adccde668f783be4e96e986.jpg
+
 -photo6: personal belonging
+
 
 -text: https://www.harpersbazaar.com/culture/travel-dining/g19834665/best-art-cities/
 
