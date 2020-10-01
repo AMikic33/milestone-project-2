@@ -11,7 +11,7 @@
     var searchResults = [];
     var city = [];
     
-    // objects for searching interests
+    // objects for searching place types
 
     var searchOne = { id:"library", title: "Library", typeList:['library']};
     var searchTwo = { id:"art_gallery", title: "Art Gallery", typeList:['art_gallery']};
@@ -26,7 +26,7 @@
 
     
 
-// initiating and displaying the map element 
+// initiating and displaying map
   
 
     function initMap() {
@@ -39,25 +39,27 @@
         });
         
         searchSelectCity();
-        buttonSelectSearchType();
+        buttonPickPlaceType();
 
-            }
+        }
 
-                // interests
+                
+            // updating neccessary variables and elements for chosen place type
 
+    function buttonPickPlaceType(IDbutton) {
+        var i = 0;
 
-    function buttonSelectSearchType(buttonID) {
-    var i = 0;
-
-    for (i = 0; i < search.length; i++) {
+        for (i = 0; i < search.length; i++) {
      
-        if (search[i].id == buttonID) {
+            if (search[i].id == IDbutton) {
           
-            document.getElementById('textInterest').innerHTML = search[i].title;
-            updatedType = search[i].typeList;
+                document.getElementById('textInterest').innerHTML = search[i].title;
+                updatedType = search[i].typeList;
         }
     }
 }
+
+            // location input and the autocomplete
 
 function searchSelectCity() {
 
@@ -73,7 +75,8 @@ function searchSelectCity() {
         place = autocomplete.getPlace();
     });
 
-    /* when the submit button is clicked in the cityForm, the map center is changed to this new location and the values are set using the DOM */
+    // when submit button is clicked - the map center is changed to the new location 
+
     searchForm.addEventListener("submit", function() {
         if (place !== "") {
             updateLatLng = new google.maps.LatLng(place.geometry.location.lat(), place.geometry.location.lng());
@@ -87,6 +90,8 @@ function searchSelectCity() {
         }
     });
 }
+
+        //  creating request and reseting the map if the location and place type haven't been chosen
 
 function requestLocations() {
     clearMap();
@@ -110,7 +115,7 @@ function requestLocations() {
     }
 }
 
-
+    // adding markers to the requested results on the map
 
 function callback(results, status,) {
     searchResults = [];
@@ -118,32 +123,36 @@ function callback(results, status,) {
 
     if (status == google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < searchResults.length; i++) {
-            createMarker(searchResults[i]);
+            markerCreator(searchResults[i]);
         }
     }
 }
 
-function createMarker(place) {
+        // creating marker
+
+function markerCreator(place) {
     marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location
     });
 
-    //adds each place item to  the markersClear array
+    
     markersClear.push(marker);
 
-    //adds the infowindow to each marker as a popup when the marker is clicked
+    //adding infowindow to each marker when the marker clicked
+
     google.maps.event.addListener(marker, 'click', function() {
         infowindow.setContent(`<h4>${place.name}</h4><p><b>Type:</b> ${document.getElementById('textInterest').innerHTML}</p>`);
         infowindow.open(map, this);
     });
 }
 
+        // reseting "current selection" fields
+
 function resetSearch() {
     place = "";
     center = "";
     updatedType = [null];
 
-    clearMap();
     resetFields();
 }

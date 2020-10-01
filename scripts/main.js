@@ -1,35 +1,36 @@
 document.getElementById('library').onclick = function() {
-    buttonSelectSearchType(this.id);
+    buttonPickTypePlace(this.id);
 };
 
 document.getElementById('art_gallery').onclick = function() {
-    buttonSelectSearchType(this.id);
+    buttonPickTypePlace(this.id);
 };
 
 document.getElementById('book_store').onclick = function() {
-    buttonSelectSearchType(this.id);
+    buttonPickPlaceType(this.id);
 };
 
 document.getElementById('movie_theater').onclick = function() {
-    buttonSelectSearchType(this.id);
+    buttonPickPlaceType(this.id);
 };
 
 document.getElementById('attraction').onclick = function() {
-    buttonSelectSearchType(this.id);
+    buttonPickPlaceType(this.id);
 };
 
 document.getElementById('museum').onclick = function() {
-    buttonSelectSearchType(this.id);
+    buttonPickPlaceType(this.id);
 };
 
 document.getElementById('stadium').onclick = function() {
-    buttonSelectSearchType(this.id);
+    buttonPickPlaceType(this.id);
 };
 
 document.getElementById('city_hall').onclick = function() {
-    buttonSelectSearchType(this.id);
+    buttonPickPlaceType(this.id);
 };
 
+        // activating reset function 
 
 document.getElementById('resetSearch').onclick = function() {
     resetSearch();
