@@ -38,7 +38,6 @@ h2 {
 
 .section-style {
     background-color: #696969;
-    color: #FFF;
     padding: 0;
 }
 
@@ -81,6 +80,9 @@ img[src*="photo6.jpg"] {
   height: auto;
 }
 
+.text-center {
+    color: #FFF;
+}
 
                                 /* title and text */
 
@@ -90,6 +92,7 @@ h3 {
     padding-top: 5%;
     letter-spacing: 4px;
     text-align: center;
+    color: #FFF;
 }
 
 @media only screen and (max-width: 375px) {
@@ -110,6 +113,7 @@ h3 {
     margin-left: 0;
     margin-top: 5%;
     background-color: #add8e6;
+    color: #FFF;
     border:#add8e6; 
 }
 
@@ -136,6 +140,7 @@ h3 {
     top: 15%;
     padding: 5%;
     background: rgba(0,0,0,0.20);
+    color: #FFF;
 
 }   
 
@@ -151,16 +156,17 @@ input[type="text"] {
     width: 75%;
     float: left;
     padding: 3%;
+    color: #FFF;
 }
 
 
                             /* buttons */
 
-button {
+.btn-info {
     padding: 10px;
-    background-color: #add8e6;
-    border-color: #add8e6; 
-    color: #696969;
+    background-color: #17a2b8;
+    border-color: #17a2b8; 
+    color: #fff;
     font-size:0.875em;
     font-weight: 500;
     left:-60px;
@@ -169,9 +175,10 @@ button {
     
 }
 
-button:hover {
+.btn-info:hover {
     transform: scale(1.1);
-    color: #fff;
+    background-color:#add8e6;
+    color: #696969;
 }
 
 
@@ -184,6 +191,7 @@ button:hover {
     top: 15%;
     padding: 5%;
     width: 100%;
+    color: #FFF;
 }
 
 h4 {

@@ -32,9 +32,13 @@ document.getElementById('city_hall').onclick = function() {
     buttonPickPlaceType(this.id);
 };
 
-/* ... */
+
 document.getElementById('resetSearch').onclick = function() {
     resetSearch();
+};
+
+document.getElementById('deleteMarkers').onclick = function() {
+    deleteMarkers();
 };
 
 document.getElementById('showResults').onclick = function() {

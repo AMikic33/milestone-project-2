@@ -3,7 +3,7 @@
 var map;
 var center;
 var search = [];
-var infowindow;
+var infoWindow;
 var updatedType = [];
 var marker = [];
 var markersClear = [];
@@ -74,7 +74,9 @@ function initMap() {
 			lat: 46.619261,
 			lng: -33.134766,
 		},
-	});
+    });
+    
+    infowindow = new google.maps.InfoWindow();
 
 	searchSelectCity();
 	buttonPickPlaceType();
@@ -152,7 +154,7 @@ function requestLocations() {
 	}
 }
 
-// adding markers to the requested results on the map
+/* adding markers to the requested results on the map - alerting if no results */
 
 function callback(results, status) {
 	if (status == "ZERO_RESULTS") {
@@ -178,24 +180,32 @@ function markerCreator(place) {
 
 	markersClear.push(marker);
 
-	let infoWindowHtml = `<h4>${place.name}</h4><p><b>Type:</b> ${
-    document.getElementById("textInterest").innerHTML
-  }</p>`;
-	const infowindow = new google.maps.InfoWindow({
-		content: infoWindowHtml,
-	});
+google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent(`<h4>${place.name}</h4> <p><b>Rating:</b> ${place.rating}</p><p><b>Type:</b> ${document.getElementById('textInterest').innerHTML}</p>`);
+            infowindow.open(map, this);
+        }); 
+    }
 
-	marker.addListener("click", () => {
-		infowindow.open(map, marker);
-	});
+
+/* function deleting markers enables a search for another interest in the same city */
+
+function deleteMarkers() {
+
+    for (var i = 0; i < markersClear.length; i++) {
+        markersClear[i].setMap(null);
+    }
+    markersClear = [];
 }
 
-// reseting "current selection" fields
+/* function reseting "current search" fields and deleting markers -site ready for a full new search */
 
 function resetSearch() {
 	place = "";
 	center = "";
 	updatedType = [null];
 
-	resetFields();
+    resetFields();
+    deleteMarkers();
+
 }
+
