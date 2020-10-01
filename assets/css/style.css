@@ -174,12 +174,6 @@ button:hover {
     color: #fff;
 }
 
-button:focus {     
-    background-color: #696969;  
-    border: #fff;
-    color: #fff;  
-}
-
 
                         /* current choice window */
 .current_choice {
