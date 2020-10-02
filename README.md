@@ -37,8 +37,7 @@ Furthermore, there is a "current selection" part, to show to the user their curr
 ## Wireframes
 
 - The wireframes are included in a separate folder. Please use the following link to access the entire wireframe collection:
-https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
-
+https://github.com/AMikic33/milestone-project-2/tree/master/wireframes
 
 
 ## Features
@@ -66,8 +65,8 @@ https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
 ## Technologies Used
 
 
--HTML - has been used to give instructions to the browser on how to arrange the layout and interprit the code correctly.
--CSS - has been used to style and theme the website.
+- HTML - has been used to give instructions to the browser on how to arrange the layout and interprit the code correctly.
+- CSS - has been used to style and theme the website.
 - Bootstrap - has been used to help design the framework.
 - Balsamiq - has been used in the design phase to create wireframes.
 - Font Awesome - has been used to insert a font family and icons.
@@ -78,30 +77,70 @@ https://github.com/AMikic33/Luitpoldpark/tree/master/wireframes
 
 ## Testing
 
+Following manual testing was done to ensure that the project has no bugs or layout issues and that all links and media work correctly.
+
+- typing in name of a city and verifying autocomplete 
+- choosing a city to verify that that information has been transferred to "Current choice" area
+- clicking Search button after choosing a city to verify map responsivnes
+- selecting Search button without entering any details to verify that an error message appears
+- click on an "Interest" button (all buttons have been separately checked) to verify that the chosen info has been transferred to the "Current choice" area
+- When both, a city and an interest chosen, clicked on Show Results buttoon to verify that the map zoomes in on the selected city and markers appear for chosen interests. 
+- after clicking Show Results button, clicking Clear Map button, to verify that the markers have been deleted and the map is ready for a new search of interest in the same city
+- after clicking Show Results button, clicking Reset Search button, to verify that the map an the Current Choice area have been reseted 
+
+
+#### Responsivnes
+
+The website has been designed to scale correctly to different screen sizes, which results you can see below. To ensure that the view was user-friendly, the layout slightly changes depending on the size of the screen. 
+
+- view site on "Galaxy S5" sizeand verify that there are no viewing issues
+- view site on "iPhone 5/SE" size and verify that there are no viewing issues
+- view site on "iPhone 6/7/8" size and verify that there are no viewing issues
+- view site on "iPhone 6/7/8 Plus" size and verify that there are no viewing issues
+- view site on "iPhone X" size and verify that there are no viewing issues
+- view site on "iPad" sizeand verify that there are no viewing issues
+- view site on "iPad Pro" sizeand verify that there are no viewing issues
+- view site on "desktop" and verify that there are no viewing issues
+- The website scales correctly on all screen sizes. 
+
+
 ## Deployment
+
+This project was deployed to GitHub Pages at the address https://amikic33.github.io/milestone-project-2/ in following steps:
+
+- create a new project on GitHub
+- in the terminal, type "git add ." to add all new changes to the code to staging area
+- commit these by typing "git commit -m" and adding a detailed description of the commit in ""
+- push the code commit to GitHub Pages by typing "git push"
+- once the project was ready, it was deployed to GitHub pages as follows:
+
+  - click on settings
+  - scroll to "GitHub" pages section
+  - click on dropdown under "source" and select "master branch"
+
 
 ## Credits
 
 #### Content
 
--Logo image: created on favicon.ico / https://pngimage.net/wp-content/uploads/2018/05/buho-silueta-png-7.png
+- Logo image: created on favicon.ico / https://pngimage.net/wp-content/uploads/2018/05/buho-silueta-png-7.png
 
--photo1: https://upload.wikimedia.org/wikipedia/en/6/66/Graves_Art_Gallery%2C_Sheffield.jpg
+- photo1: https://upload.wikimedia.org/wikipedia/en/6/66/Graves_Art_Gallery%2C_Sheffield.jpg
 
--photo2: https://live.staticflickr.com/37/110845690_5f0a727f46_b.jpg
+- photo2: https://live.staticflickr.com/37/110845690_5f0a727f46_b.jpg
 
--photo3: https://live.staticflickr.com/65535/37843070504_8352d7ecd0_b.jpg
+- photo3: https://live.staticflickr.com/65535/37843070504_8352d7ecd0_b.jpg
 
--photo4: https://cdn.pixabay.com/photo/2019/12/20/11/06/movie-4708211__340.jpg
+- photo4: https://cdn.pixabay.com/photo/2019/12/20/11/06/movie-4708211__340.jpg
 
--photo5: https://i.pinimg.com/originals/46/38/72/4638722a2adccde668f783be4e96e986.jpg
+- photo5: https://i.pinimg.com/originals/46/38/72/4638722a2adccde668f783be4e96e986.jpg
 
--photo6: personal belonging
+- photo6: personal belonging
 
 
--text: https://www.harpersbazaar.com/culture/travel-dining/g19834665/best-art-cities/
+- text: https://www.harpersbazaar.com/culture/travel-dining/g19834665/best-art-cities/
 
--Font Icons from Font Awesome
+- Font Icons from Font Awesome
 
 
 ## Acknowledgements
