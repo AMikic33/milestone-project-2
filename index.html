@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
    <head class= "container-fluid">
-
-                               <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      
-                                    <!--Import materialize.css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-
-                        <!-- loading Bootstrap and Font Awesome -->
-        <link
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+      <!-- loading Bootstrap and Font Awesome -->
+      <link
          rel="stylesheet"
          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -23,165 +20,128 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Art Finder</title>
-
-                                    <!-- link to css -->
+      <!-- link to css -->
       <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
       <link rel="shortcut icon" href="assets/images/favicon.ico" />
    </head>
-
    <body class="container-fluid body-style">
-
-
-                                    <!-- Header -->
-
-        <header class="container-fluid header-style">
-            <div class="col-md-12">
-                <a href="index.html"> <img src="assets/images/favicon.ico" class="logo" width="100"></a>
-                <h2>Discover the art around you.</h2>
-            </div>
+      <!-- Header -->
+      <header class="container-fluid header-style">
+         <div class="col-md-12">
+            <a href="index.html"> <img src="assets/images/favicon.ico" class="logo" width="100"></a>
+            <h2>Discover the art around you.</h2>
+         </div>
       </header>
-
-<section class="container-fluid section-style">
-
-                                <!-- Main title and photo gallery -->
-
-        <div>
+      <section class="container-fluid section-style">
+         <!-- Main title and photo gallery -->
+         <div>
             <h3>Find your interests where ever you go!</h3>
-                
-                    <div class="gallery">
-                        <img src="assets/images/photo1.jpg" class="responsive">
-                        <img src="assets/images/photo2.jpg" class="responsive">
-                        <img src="assets/images/photo3.jpg" class="responsive">
-                        <img src="assets/images/photo4.jpg" class="responsive">
-                        <img src="assets/images/photo5.jpg" class="responsive">
-                        <img src="assets/images/photo6.jpg" class="responsive">
-                    </div>
-        </div>
-
-
-                                                <!-- Intro text -->
-
-                <div class="container-fluid text-center">
-
-                    <p>
-                        In a world where indulging our passions has become second nature, travel has become 
-                        more than just an enjoyable getaway, but a means by which to explore interests old 
-                        and new. Why and where we choose to travel is a choice motivated by a number of factors, 
-                        each of which varies from person to person. From history and cuisine to discovering the 
-                        world's best beaches, these are motivators that come up time and again. But recently, 
-                        there has been a long overdue shift to traveling for the arts.
-                    </p>
-                    <p>
-                        The arts have always held a mesmeric power in their ability to shine a spotlight onto 
-                        destinations and neighborhoods that, perhaps, we would not have considered otherwise. 
-                        Traveling through the lens of galleries, museums, architecture, theatre and more shows 
-                        another side to these destinations, as you step away from the crowds to discover a world 
-                        which gives you a true flavor for a destination, its culture and its people.
-                    </p>
-                </div>
-
-
-
-                                <!-- Cards showing the three steps -->
-
-<div class="card-group">
-    <div class="card">
-        <h4> Step 1 </h4>
-        <div class="card-body">
-            <h5 class="card-title">Choose your destination <br><i class="fa fa-map-signs" aria-hidden="true"></i></h5>
-        </div>
-    </div>
-    <div class="card">
-        <h4> Step 2 </h4>
-        <div class="card-body">
-            <h5 class="card-title">Choose your interest<br><i class="fa fa-heart" aria-hidden="true"></i></h5>
-        </div>
-    </div>
-    <div class="card">
-        <h4> Step 3 </h4>
-        <div class="card-body">
-            <h5 class="card-title">See your results on the map<br><i class="fa fa-map" aria-hidden="true"></i></h5>
-        </div>
-    </div>
-</div>
-
-
-                                <!-- search section -->
-
-
-
-
-<div class="col-sm-12 col-md-6 form">
-    
-        <h5>Choose your destination</h5>
-        <form id="searchForm" onsubmit="return-false">
-            <input type="text" class="form-ctrl" name="city" id="locationName" placeholder="enter a location"/>
-            <input type="submit" value="Search" class="searchForm-button"/>
-        </form>
-   
-        <h5>Choose your interest</h5>
-        <button class="btn btn-info" id="library">Library</button>
-        <button class="btn btn-info" id="art_gallery">Art Gallery</button>
-        <button class="btn btn-info" id="book_store">Book store</button>
-        <button class="btn btn-info" id="movie_theater">Movie theater</button>
-        <button class="btn btn-info" id="museum">Museum</button>
-        <button class="btn btn-info" id="stadium">Stadium</button>
-        <button class="btn btn-info" id="attraction">Tourist Attraction</button>
-        <button class="btn btn-info" id="city_hall">City hall</button>
-</div>
-
-                            <!--  current choice window -->
-        <div class="row">
-            <div class="col-md-12 current_choice">
-                <h3>Current Choice</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Location:</h4>
-                        <h6 id="textLocation">None</h6>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Interest:</h4>
-                        <h6 id="textInterest">None</h6>
-
-                    </div>
-                </div>
-                <div class="row action-buttons">
-                    <button class="btn btn-info" id="showResults">Show Results</button>
-                    <button class="btn btn-info" id="deleteMarkers">Clear Map</button>
-                    <button class="btn btn-info" id="resetSearch">Reset Search</button>
-                </div>
+            <div class="gallery">
+               <img src="assets/images/photo1.jpg" class="responsive">
+               <img src="assets/images/photo2.jpg" class="responsive">
+               <img src="assets/images/photo3.jpg" class="responsive">
+               <img src="assets/images/photo4.jpg" class="responsive">
+               <img src="assets/images/photo5.jpg" class="responsive">
+               <img src="assets/images/photo6.jpg" class="responsive">
             </div>
-</div>
-
-  
-
-                            <!-- map -->
-
-
-  <div id="map"></div>
-
-
-                                <!-- Footer -->
-
-      <footer>
-         <ul id="inner-footer">
-            <li>
-               <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-               <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
-            </li>
-            <li>
-               <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-         </ul>
-      </footer>
-</section>
-                        <!-- lodading scripts -->
-
-<script src="js/map.js"></script>
-<script src="js/main.js"></script>
-
-<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBelaLk0APDQf-Zp2M4eZaiY1DLkauSqNE&libraries=places,geometry&callback=initMap"></script>
-      </body>
+         </div>
+         <!-- Intro text -->
+         <div class="container-fluid text-center">
+            <p>
+               In a world where indulging our passions has become second nature, travel has become 
+               more than just an enjoyable getaway, but a means by which to explore interests old 
+               and new. Why and where we choose to travel is a choice motivated by a number of factors, 
+               each of which varies from person to person. From history and cuisine to discovering the 
+               world's best beaches, these are motivators that come up time and again. But recently, 
+               there has been a long overdue shift to traveling for the arts.
+            </p>
+            <p>
+               The arts have always held a mesmeric power in their ability to shine a spotlight onto 
+               destinations and neighborhoods that, perhaps, we would not have considered otherwise. 
+               Traveling through the lens of galleries, museums, architecture, theatre and more shows 
+               another side to these destinations, as you step away from the crowds to discover a world 
+               which gives you a true flavor for a destination, its culture and its people.
+            </p>
+         </div>
+         <!-- Cards showing the three steps -->
+         <div class="card-group">
+            <div class="card">
+               <h4> Step 1 </h4>
+               <div class="card-body">
+                  <h5 class="card-title">Choose your destination <br><i class="fa fa-map-signs" aria-hidden="true"></i></h5>
+               </div>
+            </div>
+            <div class="card">
+               <h4> Step 2 </h4>
+               <div class="card-body">
+                  <h5 class="card-title">Choose your interest<br><i class="fa fa-heart" aria-hidden="true"></i></h5>
+               </div>
+            </div>
+            <div class="card">
+               <h4> Step 3 </h4>
+               <div class="card-body">
+                  <h5 class="card-title">See your results on the map<br><i class="fa fa-map" aria-hidden="true"></i></h5>
+               </div>
+            </div>
+         </div>
+         <!-- search section -->
+         <div class="col-sm-12 col-md-6 form">
+            <h5>Choose your destination</h5>
+            <form id="searchForm" onsubmit="return-false">
+               <input type="text" class="form-ctrl" name="city" id="locationName" placeholder="enter a location"/>
+               <input type="submit" value="Search" class="searchForm-button"/>
+            </form>
+            <h5>Choose your interest</h5>
+            <button class="btn btn-info" id="library">Library</button>
+            <button class="btn btn-info" id="art_gallery">Art Gallery</button>
+            <button class="btn btn-info" id="book_store">Book store</button>
+            <button class="btn btn-info" id="movie_theater">Movie theater</button>
+            <button class="btn btn-info" id="museum">Museum</button>
+            <button class="btn btn-info" id="stadium">Stadium</button>
+            <button class="btn btn-info" id="attraction">Tourist Attraction</button>
+            <button class="btn btn-info" id="city_hall">City hall</button>
+         </div>
+         <!--  current choice window -->
+         <div class="row">
+            <div class="col-md-12 current_choice">
+               <h3>Current Choice</h3>
+               <div class="row">
+                  <div class="col-md-6">
+                     <h4>Location:</h4>
+                     <h6 id="textLocation">None</h6>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>Interest:</h4>
+                     <h6 id="textInterest">None</h6>
+                  </div>
+               </div>
+               <div class="row action-buttons">
+                  <button class="btn btn-info" id="showResults">Show Results</button>
+                  <button class="btn btn-info" id="deleteMarkers">Clear Map</button>
+                  <button class="btn btn-info" id="resetSearch">Reset Search</button>
+               </div>
+            </div>
+         </div>
+         <!-- map -->
+         <div id="map"></div>
+         <!-- Footer -->
+         <footer>
+            <ul id="inner-footer">
+               <li>
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               </li>
+            </ul>
+         </footer>
+      </section>
+      <!-- lodading scripts -->
+      <script src="js/map.js"></script>
+      <script src="js/main.js"></script>
+      <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBelaLk0APDQf-Zp2M4eZaiY1DLkauSqNE&libraries=places,geometry&callback=initMap"></script>
+   </body>
 </html>
